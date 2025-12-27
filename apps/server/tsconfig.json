@@ -1,0 +1,12 @@
+{
+  "extends": [
+    "../../tsconfig.json",
+    "@tsconfig/bases/node24",
+    "@tsconfig/bases/node-ts"
+  ],
+  "compilerOptions": {
+    "outDir": "./dist"
+  },
+  "exclude": ["./dist", "node_modules"],
+  "include": ["./src"]
+}

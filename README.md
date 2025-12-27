@@ -12,8 +12,6 @@ A 2D social chat game set in a magical botanical kingdom where anthropomorphic f
 
 The game takes place in a futuristic botanical research facility nestled within an enormous biodome. This high-tech garden combines sleek sci-fi architecture with lush plant life, where genetically enhanced flowers and sentient garden creatures called "livs" thrive. Players explore different hangout spots like the greenhouse café, sunny meadows, and flower patches—while making friends and discovering the secrets of this peaceful plant-filled world.
 
-Resources, also named ???, and are gathered by ???.
-
 ## Resources
 
 There are three main types of resources in The Flowers Edge.

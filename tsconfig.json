@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    /* Linting */
+    "strict": true,
+    "skipLibCheck": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true
+  }
+}

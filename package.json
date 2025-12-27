@@ -1,0 +1,24 @@
+{
+  "name": "blomsterkanten",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "biome:check": "biome check",
+    "biome:check:fix": "biome check --write",
+    "dev": "pnpm run -r --parallel dev",
+    "build": "pnpm run -r build",
+    "test:unit": "pnpm run -r test:unit",
+    "test:e2e": "pnpm --filter \"@monorepo/orm\" seed && pnpm run -r test:e2e"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.26.2",
+  "devDependencies": {
+    "@biomejs/biome": "2.3.10",
+    "@tsconfig/bases": "catalog:",
+    "typescript": "catalog:",
+    "vitest": "catalog:"
+  }
+}
