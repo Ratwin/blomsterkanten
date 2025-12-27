@@ -1,5 +1,5 @@
 
-# Blomsterkanten
+# The Flowers Edge (Blomsterkanten)
 
 A 2D social chat game set in a magical botanical kingdom where anthropomorphic flowers, plants, and garden creatures live in harmony.
 
@@ -16,7 +16,7 @@ Resources, also named ???, and are gathered by ???.
 
 ## Resources
 
-There are three main types of resources in Blomsterkanten.
+There are three main types of resources in The Flowers Edge.
 * Petals
 * Seeds
 * Gold
