@@ -1,45 +1,17 @@
-import {
-  createRootRoute,
-  createRoute,
-  createRouter,
-  Outlet,
-  RouterProvider,
-} from '@tanstack/react-router';
-import { TanStackRouterDevtools } from '@tanstack/react-router-devtools';
-import { StrictMode } from 'react';
+import { createRouter, RouterProvider } from '@tanstack/react-router';
 import ReactDOM from 'react-dom/client';
-
+import { routeTree } from './routeTree.gen';
 import './styles.css';
+import reportWebVitals from './reportWebVitals';
 
-import App from './App.tsx';
-import reportWebVitals from './reportWebVitals.ts';
-
-const rootRoute = createRootRoute({
-  component: () => (
-    <>
-      <Outlet />
-      <TanStackRouterDevtools />
-    </>
-  ),
-});
-
-const indexRoute = createRoute({
-  getParentRoute: () => rootRoute,
-  path: '/',
-  component: App,
-});
-
-const routeTree = rootRoute.addChildren([indexRoute]);
-
+// Set up a Router instance
 const router = createRouter({
   routeTree,
-  context: {},
   defaultPreload: 'intent',
   scrollRestoration: true,
-  defaultStructuralSharing: true,
-  defaultPreloadStaleTime: 0,
 });
 
+// Register things for typesafety
 declare module '@tanstack/react-router' {
   interface Register {
     router: typeof router;
@@ -47,13 +19,10 @@ declare module '@tanstack/react-router' {
 }
 
 const rootElement = document.getElementById('app');
+
 if (rootElement && !rootElement.innerHTML) {
   const root = ReactDOM.createRoot(rootElement);
-  root.render(
-    <StrictMode>
-      <RouterProvider router={router} />
-    </StrictMode>
-  );
+  root.render(<RouterProvider router={router} />);
 }
 
 // If you want to start measuring performance in your app, pass a function
