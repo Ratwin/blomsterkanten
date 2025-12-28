@@ -1,5 +1,6 @@
 {
   "name": "@monorepo/server",
+  "private": true,
   "description": "Backend server for blomsterkanten",
   "type": "module",
   "main": "src/index.ts",
@@ -8,8 +9,7 @@
     "dev": "tsx watch src/index.ts",
     "build": "tsc --project tsconfig.json",
     "start": "node dist/index.js",
-    "test:e2e": "vitest --project=e2e",
-    "test:unit": "vitest --project=unit",
+    "test": "vitest",
     "migrate:generate": "drizzle-kit generate",
     "migrate:apply": "drizzle-kit migrate",
     "database:reset": "tsx src/scripts/reset-database.ts",
