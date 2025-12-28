@@ -12,8 +12,6 @@
   "editor.formatOnPaste": true,
   "editor.defaultFormatter": "biomejs.biome",
   "editor.codeActionsOnSave": {
-    "source.fixAll": "always",
-    "source.removeUnusedImports": "always"
+    "quickfix.biome.apply": "always"
   },
-  "editor.tabSize": 2,
 }

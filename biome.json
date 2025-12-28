@@ -8,10 +8,11 @@
   "files": {
     "ignoreUnknown": false,
     "includes": [
-      "**/src/**/*",
+      "**/src/**/*.{ts,tsx,js,jsx}",
       "**/.vscode/**/*",
       "**/index.html",
-      "**/vite.config.js",
+      "**/vite.config.ts",
+      "**/vitest.config.ts",
       "!**/src/routeTree.gen.ts",
       "!**/src/styles.css"
     ]
